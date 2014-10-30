@@ -39,6 +39,7 @@ module.exports = function(grunt) {
         },
         files: {
           'index.html': 'index.html',
+          'pages': 'pages',
           'img': 'img',
           'cache.manifest': 'cache.manifest'
         }
