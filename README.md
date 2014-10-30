@@ -5,8 +5,12 @@
 
 ## Änderungen
 * `index.html` editieren
-* `grunt ausführen`
-* Die aktuelle Version befindet sich in `target`
+* `grunt` ausführen
+* Die aktuelle Version befindet sich in `target`, also einfach im
+  Browser öffnen
+
+## Optionales Äufräumen
+* `grunt clean`
 
 ## Optionaler Test mit Vagrant
 * `vagrant up`
@@ -14,3 +18,5 @@
 ## Deployment
 * `grunt`
 * Upload des Verzeichnisses `target` -> `spqr-info`
+
+EOF
