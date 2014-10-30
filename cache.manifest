@@ -1,12 +1,12 @@
 CACHE MANIFEST
-# version 1.4
+# version 1.7
 CACHE:
-vendor/fonts/glyphicons-halflings-regular.woff
-vendor/js/bootstrap.js
-vendor/js/bootstrap.css
-vendor/js/angular-route.js
-vendor/js/angular.js
-vendor/js/jquery.js
+vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
+vendor/bootstrap/js/bootstrap.js
+vendor/bootstrap/css/bootstrap.css
+vendor/angular-route/angular-route.js
+vendor/angular/angular.js
+vendor/jquery/jquery.js
 js/spqr.js
 img/android.png
 img/ipad.png

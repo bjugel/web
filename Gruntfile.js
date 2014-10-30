@@ -7,29 +7,29 @@ module.exports = function(grunt) {
       },
       scripts: {
         options: {
-          destPrefix: 'target/vendor/js'
+          destPrefix: 'target/vendor'
         },
         files: {
-          'jquery.js': 'jquery/dist/jquery.min.js',
-          'angular.js': 'angular/angular.min.js',
-          'angular-route.js': 'angular-route/angular-route.min.js',
-          'bootstrap.js': 'bootstrap/dist/js/bootstrap.min.js'
+          'jquery/jquery.js': 'jquery/dist/jquery.min.js',
+          'angular/angular.js': 'angular/angular.min.js',
+          'angular-route/angular-route.js': 'angular-route/angular-route.min.js',
+          'bootstrap/js/bootstrap.js': 'bootstrap/dist/js/bootstrap.min.js'
         }
       },
       css: {
         options: {
-          destPrefix: 'target/vendor/css'
+          destPrefix: 'target/vendor'
         },
         files: {
-          'bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css'
+          'bootstrap/css/bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css'
         }
       },
       fonts: {
         options: {
-          destPrefix: 'target/vendor/fonts'
+          destPrefix: 'target/vendor'
         },
         files: {
-          'glyphicons-halflings-regular.woff': 'bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
+          'bootstrap/fonts/glyphicons-halflings-regular.woff': 'bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
         }
       },
       main: {
