@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     bowercopy: {
       options: {
       },
-      scripts: {
+      vendor: {
         options: {
           destPrefix: 'target/vendor'
         },
@@ -12,23 +12,10 @@ module.exports = function(grunt) {
           'jquery/jquery.js': 'jquery/dist/jquery.min.js',
           'angular/angular.js': 'angular/angular.min.js',
           'angular-route/angular-route.js': 'angular-route/angular-route.min.js',
-          'bootstrap/js/bootstrap.js': 'bootstrap/dist/js/bootstrap.min.js'
-        }
-      },
-      css: {
-        options: {
-          destPrefix: 'target/vendor'
-        },
-        files: {
-          'bootstrap/css/bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css'
-        }
-      },
-      fonts: {
-        options: {
-          destPrefix: 'target/vendor'
-        },
-        files: {
-          'bootstrap/fonts/glyphicons-halflings-regular.woff': 'bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
+          'bootstrap/js/bootstrap.js': 'bootstrap/dist/js/bootstrap.min.js',
+          'bootstrap/css/bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css',
+          'bootstrap/fonts/glyphicons-halflings-regular.woff':
+          'bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
         }
       },
       main: {
