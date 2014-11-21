@@ -8,10 +8,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet"/>
     <link href="css/spqr.css" rel="stylesheet"/>
-    <title>SPQR Informatik GmbH</title>
+    <title>{{$route.current.res.title}}</title>
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="NavCtrl">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/">{{$route.current.res.logo}}</a>
+          <a class="navbar-brand" href="#/">{{$route.current.res.title}}</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -37,8 +37,8 @@
 
     <div class="container">
       <div class="container">
-        <div class="jumbotron" ng-controller="NavCtrl">
-          <h1>{{$route.current.res.logo}}</h1>
+        <div class="jumbotron">
+          <h1>{{$route.current.res.title}}</h1>
           <p>{{$route.current.slug}} </p> <!--{{ $route.current.slug }}-->
         </div>
       </div>

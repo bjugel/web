@@ -1,9 +1,9 @@
 'use strict';
 
-var isSpqr = true;
+var isSpqr = false;
 
 var ressources = {
-	logo: isSpqr ? 'SPQR Informatik GmbH' : 'Ingenieurbüro Öllinger'
+	title: isSpqr ? 'SPQR Informatik GmbH' : 'Ingenieurbüro Öllinger'
 };
 
 var spqrApp = angular.module('spqrApp', [
@@ -19,7 +19,7 @@ spqrApp.config(['$routeProvider',
             }).
             when('/index', {
                 templateUrl: 'pages/index.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'index',
                 slug: 'IT-Beratung und Software-Lösungen',
 				res : ressources
@@ -27,57 +27,57 @@ spqrApp.config(['$routeProvider',
             }).
             when('/consulting', {
                 templateUrl: 'pages/consulting.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'consulting',
-                slug: 'Wir sind technischer Partner für die Definition und Umsetzung der IT-Strategie eines Unternehmens.',
+                slug: 'Wir sind technischer Partner für die Definition und Umsetzung der IT-Strategie eines Unternehmens',
 				res : ressources
             }).
             when('/design-modeling', {
                 templateUrl: 'pages/design-modeling.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'design',
-                slug: 'Fachliche, technische Konzeption und Modellierung.',
+                slug: 'Fachliche, technische Konzeption und Modellierung',
 				res : ressources
 				
             }).
             when('/data-management', {
                 templateUrl: 'pages/data-management.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'datamanagement',
                 slug: 'Data Management',
 				res : ressources
             }).
             when('/enterprise-development', {
                 templateUrl: 'pages/enterprise-development.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'enterprisedev',
                 slug: 'Enterprise Development',
 				res : ressources
             }).
             when('/continuous-integration', {
                 templateUrl: 'pages/continuous-integration.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'continuous',
                 slug: 'Continuous Integration',
 				res : ressources
             }).
             when('/mobile-solutions', {
                 templateUrl: 'pages/mobile-solutions.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'mobilesolutions',
                 slug: 'App-Entwicklung',
 				res : ressources
             }).
             when('/impressum', {
                 templateUrl: 'pages/' + (isSpqr ? '' : 'iboe-') + 'impressum.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'impressum',
                 slug: 'IT-Beratung und Software-Lösungen',
 				res : ressources
             }).
             when('/contact-us', {
                 templateUrl: 'pages/' + (isSpqr ? '' : 'iboe-') + 'contact-us.html',
-                controller: 'IdentityCtrl',
+                controller: 'MainCtrl',
                 activeTab: 'contact',
                 slug: 'IT-Beratung und Software-Lösungen',
 				res : ressources
