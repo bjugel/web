@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#/">SPQR Informatik GmbH</a>
+          <a class="navbar-brand" href="#/">{{$route.current.res.logo}}</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -38,8 +38,8 @@
     <div class="container">
       <div class="container">
         <div class="jumbotron" ng-controller="NavCtrl">
-          <h1>SPQR Informatik GmbH</h1>
-          <p>{{ $route.current.slug }}</p>
+          <h1>{{$route.current.res.logo}}</h1>
+          <p>{{$route.current.slug}} </p> <!--{{ $route.current.slug }}-->
         </div>
       </div>
 
