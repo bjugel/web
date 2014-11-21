@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="spqrApp" manifest="cache.manifest">
+<html ng-app="spqrApp" manifest="cache.manifest" ng-controller="MainCtrl">
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="container" ng-view>
+      <div class="container" ng-view="ng-view">
       </div>
     </div> <!-- /.container -->
 
