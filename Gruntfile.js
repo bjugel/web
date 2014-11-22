@@ -26,9 +26,18 @@ module.exports = function(grunt) {
         files: {
           'index.html': 'index.html',
           'pages': 'pages',
-          'img': 'img',
-          'cache.manifest': 'cache.manifest'
+          'img': 'img'
         }
+      }
+    },
+    replace: {
+      cacheManifest: {
+        src: ['cache.manifest'],
+        dest: 'target/',
+        replacements: [{
+          from: /@CACHE_MANIFEST_BUILD_TIMESTAMP@/g,
+          to: '<%= grunt.template.today("isoDateTime") %>'
+        }]
       }
     },
     uglify: {
@@ -53,7 +62,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-bowercopy');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-text-replace');
 
   // Default tasks to run when grunt is started without arguments
-  grunt.registerTask('default', ['clean', 'uglify','cssmin','bowercopy']);
+  grunt.registerTask('default', ['clean', 'uglify','cssmin','bowercopy', 'replace']);
 };
