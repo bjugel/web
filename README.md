@@ -9,10 +9,9 @@
 * Für das Template an sich `index.html` editieren
 * Für die Unterseiten `pages/*.html` editieren
 * Für Änderung des "slug" `js/app.js` editieren
-* __Unbedingt__ die Version in `cache.manifest` erhöhen!!!
 * `grunt` ausführen
 * Die aktuelle Version befindet sich in `target`, also einfach im
-  Browser öffnen
+  Browser öffnen (bei Problemen in Chrome Same Origin Policy [beachten](http://stackoverflow.com/questions/8449716/cross-origin-requests-are-only-supported-for-http-but-its-not-cross-domain))
 
 ## Optionales Äufräumen
 * `grunt clean`
