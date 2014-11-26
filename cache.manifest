@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 1.9
+# version 8.0
 CACHE:
 vendor/bootstrap/fonts/glyphicons-halflings-regular.woff
 vendor/bootstrap/js/bootstrap.js
@@ -24,3 +24,5 @@ pages/enterprise-development.html
 pages/impressum.html
 pages/index.html
 pages/mobile-solutions.html
+pages/iboe-impressum.html
+pages/iboe-contact-us.html

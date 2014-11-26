@@ -1,6 +1,6 @@
 'use strict';
 
-var isSpqr = false;
+var isSpqr = true;
 
 var ressources = {
 	title: isSpqr ? 'SPQR Informatik GmbH' : 'Ingenieurbüro Öllinger'
@@ -67,14 +67,14 @@ spqrApp.config(['$routeProvider',
 				res : ressources
             }).
             when('/impressum', {
-                templateUrl: 'pages/' + (isSpqr ? '' : 'iboe-') + 'impressum.html',
+                templateUrl: isSpqr ? 'pages/impressum.html' : 'pages/iboe-impressum.html', //'pages/' + (isSpqr ? '' : 'iboe-') + 'impressum.html',
                 controller: 'IdentityCtrl',
                 activeTab: 'impressum',
                 slug: 'IT-Beratung und Software-Lösungen',
 				res : ressources
             }).
             when('/contact-us', {
-                templateUrl: 'pages/' + (isSpqr ? '' : 'iboe-') + 'contact-us.html',
+                templateUrl: isSpqr ? 'pages/contact-us.html' : 'pages/iboe-contact-us.html',//,//'pages/' + (isSpqr ? '' : 'iboe-') + 'contact-us.html',
                 controller: 'IdentityCtrl',
                 activeTab: 'contact',
                 slug: 'IT-Beratung und Software-Lösungen',
